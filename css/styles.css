@@ -1,0 +1,134 @@
+/* Custom components */
+:root{
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey-700: hsl(0, 0%, 20%);
+--Grey-800: hsl(0, 0%, 12%);
+--Grey-900: hsl(0, 0%, 8%);
+--ff: 'Inter', sans-serif;
+--b-font-size: .875rem;
+}
+/* Css resets */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Grey-900);
+    font-family: var(--ff);
+    font-size: var(--b-font-size);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+}
+/* End of resets */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    gap: 2rem;
+    margin: 4rem;
+}
+
+main article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 364px;
+    background-color: var(--Grey-800);
+    margin-inline: 1rem;
+    padding: 2rem 1.5rem;
+    border-radius: .75rem;
+}
+
+article .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+article .profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.info p{
+    color: var(--Green);
+}
+
+article ul{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    width: 100%;
+}
+
+ul li{
+    background-color: var(--Grey-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+ul li a{
+    padding: .75rem;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
